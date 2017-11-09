@@ -1,2 +1,5 @@
 /ebean-core/ebean-core.iml
 /ebean-core/.idea
+/.idea
+/target
+/ebean-core/target
