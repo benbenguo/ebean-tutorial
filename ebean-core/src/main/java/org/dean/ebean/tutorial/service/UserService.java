@@ -6,13 +6,13 @@ import org.dean.ebean.tutorial.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Transactional
 @Service
 public class UserService {
 
     @Autowired
     EbeanServer ebeanServer;
 
+    @Transactional
     public void updateUser() {
         User user1 = ebeanServer.find(User.class).where().eq("id", "111").findUnique();
         User user2 = ebeanServer.find(User.class).where().eq("id", "222").findUnique();
